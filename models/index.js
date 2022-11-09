@@ -2,6 +2,7 @@
 const User = require('./User');
 const Post = require('./Post');
 const Comment = require('./Comment');
+const sequelize = require('../config/connection');
 
 // sets up relationships between models
 Post.belongsTo(User, {

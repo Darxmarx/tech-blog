@@ -1,7 +1,7 @@
 // set up sequelize, bcrypt
 const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
-const sequelize = require('../config/config');
+const sequelize = require('../config/connection');
 
 // checks if password is valid using bcrypt.compareSync
 class User extends Model {
